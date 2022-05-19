@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:6-alpine'   // create container for node.js
+            image 'ubuntu'   // create container for node.js
             args '-p 3000:3000'     // expose container to this localhost server
         }
     }
